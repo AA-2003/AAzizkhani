@@ -1,0 +1,24 @@
+<header class="header">
+  <nav class="nav">
+    <a href="{{ site.baseurl }}/" class="nav-link">Home</a>
+    <a href="{{ site.baseurl }}/aboutme/" class="nav-link">About</a>
+    <a href="{{ site.baseurl }}/archive/" class="nav-link">Archive</a>
+    <button id="theme-toggle" class="theme-toggle">☀️</button>
+  </nav>
+  {% if page.title == "Home" %}
+  <div class="header-content">
+    <img src="{{ site.baseurl }}/images/alireza.jpg" alt="Alireza Azizkhani" class="profile-img">
+    <h1>Alireza Azizkhani</h1>
+    <div class="social-links">
+      <a href="mailto:alireza.azizkhani.2003@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://twitter.com/yourtwitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://t.me/yourtelegram"><i class="fab fa-telegram"></i></a>
+      <a href="https://linkedin.com/in/alireza-azizkhani"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourgithub"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="bio">
+      Hello! I'm Alireza, and I'm passionate about working with data and artificial intelligence.
+    </p>
+  </div>
+  {% endif %}
+</header>

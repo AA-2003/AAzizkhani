@@ -1,0 +1,9 @@
+title: Alireza Azizkhani 
+description: A personal resume website for Alireza Azizkhani
+baseurl: "/AAzizkhani"  
+url: "https://AA-2003.github.io" 
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag 
+google_analytics: G-WFSN3WP7N2

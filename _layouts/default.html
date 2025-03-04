@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" class="{% if site.data.theme == 'light' %}light-theme{% else %}dark-theme{% endif %}">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+  {% include analytics.html %}
+</head>
+<body>
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ site.baseurl }}/js/theme-toggle.js"></script>
+</body>
+</html>
